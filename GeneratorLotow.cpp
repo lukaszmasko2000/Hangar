@@ -1,6 +1,6 @@
 #include "GeneratorLotow.h"
 
-
+using namespace std::string_literals;
 
 int GeneratorLotow::losujLiczbe(int min, int max)
 {
@@ -16,8 +16,8 @@ double GeneratorLotow::losujRozkladNormalny(double srednia, double odchylenie)
 
 std::string GeneratorLotow::generujZnakWywolawczy()
 {
-    const std::string litery = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    std::string kod{};
+    const auto litery = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"s;
+    auto kod = ""s;
     for (int i = 0; i < 3; i++) 
     {
         kod += litery[losujLiczbe(0, 25)];
