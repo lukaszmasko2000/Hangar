@@ -23,6 +23,12 @@ public:
     void addLog(const std::string& log);
     void raportCzarnejSkrzynki() const;
 
+    friend std::ostream& operator<<(std::ostream& os, const Aircraft& a)
+    {
+        os << "[" << a.getZnak() << "] Paliwo: " << a.getPaliwo();
+        return os;
+    }
+
 protected:
     std::string znakWywolawczy;
     double paliwo;
