@@ -16,10 +16,12 @@ public:
     }
 
     virtual ~Aircraft() = default;
-    
+    virtual void fly() = 0;
+    [[nodiscard]] std::string getZnak() const noexcept { return znakWywolawczy; }
+    [[nodiscard]] double getPaliwo() const noexcept { return paliwo; } 
 
-
-
+    void addLog(const std::string& log);
+    void raportCzarnejSkrzynki() const;
 
 protected:
     std::string znakWywolawczy;
