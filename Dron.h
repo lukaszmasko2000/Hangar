@@ -5,7 +5,7 @@
 
 class Dron : public Aircraft
 {
-    Aircraft::Aircraft;
+    using Aircraft::Aircraft;
     void fly() override
     {
         paliwo -= 2.0;
