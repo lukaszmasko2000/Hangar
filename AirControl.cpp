@@ -33,3 +33,14 @@ void AirControl::symulujKolejke()
         std::cout << *a << "(Status: W POWIETRZU)" << std::endl;
     }
 }
+
+
+void AirControl::wyswietlRaportyKoncowe() const
+{
+    std::cout << "\n--- RAPORTY KONCOWE ---" << std::endl;
+    for (const auto& a : kolejkaLotow)
+    {
+        std::cout << "\nPojazd: " << a->getZnak() << std::endl;
+        a->raportCzarnejSkrzynki();
+    }
+}
