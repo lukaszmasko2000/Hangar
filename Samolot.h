@@ -9,7 +9,7 @@ class Samolot : public Aircraft
     void fly() override
     {
         paliwo -= 10.5;
-        addLog("Lot pasazerski kontynuowany. Zuzycie plaiwa: 10.5");
+        addLog("Lot pasazerski kontynuowany. Zuzycie paliwa: 10.5");
     }
 };
 
