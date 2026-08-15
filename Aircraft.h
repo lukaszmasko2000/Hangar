@@ -15,11 +15,10 @@ public:
             skrzynka.zapisz("Utworzono obiekt: " + znakWywolawczy);
     }
 
-    virtual ~Aircraft(){
-        skrzynka.zapisz("Usunięto obiekt: " + znakWywolawczy);
-    }
-
+    virtual ~Aircraft() = default;
     
+
+
 
 
 protected:
