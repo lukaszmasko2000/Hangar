@@ -9,8 +9,15 @@
 
 class AirControl
 {
-    
+public:
+    void dodajDoHangaru(std::unique_ptr<Aircraft> a);
+    void przekazDoLadowania(const std::string& fragment);
+    void symulujKolejke();
+    void wyswietlRaportyKoncowe() const;
 
+private:
+    std::vector<std::unique_ptr<Aircraft>> hangar;
+    std::vector<std::unique_ptr<Aircraft>> kolejkaLotow;
 };
 
 
