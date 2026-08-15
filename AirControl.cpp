@@ -22,3 +22,14 @@ void AirControl::przekazDoLadowania(const std::string& fragment)
         else ++it;
     }
 }
+
+
+void AirControl::symulujKolejke()
+{
+    std::cout << "\n--- SYMULACJA RUCHU W POWIETRZU ---" << std::endl;
+    for (const auto& a : kolejkaLotow)
+    {
+        a->fly();
+        std::cout << *a << "(Status: W POWIETRZU)" << std::endl;
+    }
+}
