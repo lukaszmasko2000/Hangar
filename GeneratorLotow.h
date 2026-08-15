@@ -15,7 +15,9 @@ public:
         return instance;
     }
 
-    
+    int losujLiczbe(int,int);
+    double losujRozkladNormalny(double, double);
+    std::string generujZnakWywolawczy(); 
 
 
 private:
