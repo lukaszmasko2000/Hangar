@@ -3,7 +3,7 @@
 
 #include "Aircraft.h"
 
-class Samotot : public Aircraft
+class Samolot : public Aircraft
 {
     Aircraft::Aircraft;
     void fly() override
