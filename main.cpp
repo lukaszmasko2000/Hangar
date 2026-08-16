@@ -10,7 +10,7 @@ int main(void)
 {
     std::setlocale(LC_ALL, "Polish");
 
-    GeneratorLotow& generator = GeneratorLotow::getInstance();
+    auto& generator = GeneratorLotow::getInstance();
     AirControl kontrolaLotow;
 
     for (auto i{0} ; i < 7 ; ++i)
